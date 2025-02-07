@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: bankapp
+        version: green
     spec:
       containers:
       - name: bankapp
