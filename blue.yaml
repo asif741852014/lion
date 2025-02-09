@@ -14,11 +14,11 @@ spec:
         app: bankapp
         version: blue
     spec:
+      imagePullSecrets:
+      - name: nexus-docker-secret
       containers:
       - name: bankapp
         image: 15.206.146.24:5000/bankapp:blue
-        imagePullSecrets:
-        - name: nexus-docker-secret
         resources:
           requests:
             memory: "256Mi"
