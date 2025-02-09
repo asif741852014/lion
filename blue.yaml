@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: asif1998/bankapp:blue
+        image: 15.206.146.24:5000/bankapp:blue
+        imagePullSecrets:
+        - name: nexus-docker-secret
         resources:
           requests:
             memory: "256Mi"
